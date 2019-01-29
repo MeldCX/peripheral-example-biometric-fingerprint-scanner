@@ -1,0 +1,6 @@
+{
+    "extends": "@meldcx",
+    "rules": {
+        "max-len": "off"
+    }
+}

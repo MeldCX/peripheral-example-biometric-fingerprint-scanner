@@ -1,0 +1,36 @@
+{
+  "name": "peripheral-example-biometric-fingerprint-scanner",
+  "version": "1.0.0",
+  "description": "Example Application for running the Crossmath Biometric Fingerprint Scanner in MeldCX AgentM",
+  "main": "index.js",
+  "author": "Dimitri Kamenski",
+  "license": "MIT",
+  "scripts": {
+    "build": ".\\node_modules\\.bin\\webpack --progress",
+    "watch": ".\\node_modules\\.bin\\webpack --watch",
+    "serve": "cd .\\dist\\ && http-server -p 3005"
+  },
+  "devDependencies": {
+    "@meldcx/copyright-statement": "^1.0.0",
+    "@meldcx/eslint-config": "^1.0.0",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-jest": "^23.4.2",
+    "babel-loader": "^7.1.5",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-stage-0": "^6.0.15",
+    "copy-webpack-plugin": "^4.5.2",
+    "eslint": "^4.19.1",
+    "eslint-loader": "^1.6.1",
+    "jest": "^23.5.0",
+    "make-coverage-badge": "^1.0.1",
+    "webpack": "^4.15.1",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "@meldcx/agent": "^1.0.18"
+  }
+}

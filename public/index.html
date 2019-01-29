@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="app.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+        Peripheral Example: Biometric Fingerprint Scanner
+    </h2>
+    <div id="container">
+        <div>
+            <h3>COMMAND</h3>
+            <h3>RESULT</h3>
+            <button id="init-button">Agent.Peripherals.Biometric.init()</button>
+            <div id="init-result">NA</div>
+        </div>
+        <div>
+            <button id="onStatus-button">Agent.Peripherals.Biometric.onStatus()</button>
+            <div id="onStatus-result"></div>
+        </div>
+        <div>
+            <button id="enroll-button">Agent.Peripherals.Biometric.enroll()</button>
+            <div id="enroll-result"></div>
+        </div>
+        <div>
+            <button id="listFingers-button">Agent.Peripherals.Biometric.listFingers()</button>
+            <div id="listFingers-result"></div>
+        </div>
+        <div>
+            <button id="verify-button">Agent.Peripherals.Biometric.verify()</button>
+            <div id="verify-result"></div>
+        </div>
+        <div>
+            <button id="deleteAll-button">Agent.Peripherals.Biometric.deleteAll()</button>
+            <div id="deleteAll-result"></div>
+        </div>
+        <div>
+            <button id="reset-button">Agent.Peripherals.Biometric.reset()</button>
+            <div id="reset-result"></div>
+        </div> 
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
