@@ -6,15 +6,6 @@ window.agent = agent;
 
 const reportError = (err) => console.error(err)
 
-const initScanner = async() => {
-    try {
-        const res = await agent.Peripherals.Biometric.init();
-        initResult.innerHTML = JSON.stringify(res);
-    } catch(ex) {
-        reportError(ex);
-    }
-}
-
 const onStatus = async() => {
     const statusUpdate = (res) => onStatusResult.innerHTML = JSON.stringify(res);
 
@@ -76,7 +67,6 @@ const init = async() => {
     
     reportError('Agent is ready!')
 
-    initButton.addEventListener('click', initScanner);
     onStatusButton.addEventListener('click', onStatus);
     enrollButton.addEventListener('click', enrollScanner);
     listFingersButton.addEventListener('click', listFingersScanner);
@@ -87,7 +77,6 @@ const init = async() => {
 
 
 
-const initButton = document.getElementById('init-button');
 const onStatusButton = document.getElementById('onStatus-button');
 const enrollButton = document.getElementById('enroll-button');
 const listFingersButton = document.getElementById('listFingers-button');
@@ -95,7 +84,6 @@ const verifyButton = document.getElementById('verify-button');
 const deleteAllButton = document.getElementById('deleteAll-button');
 const resetButton = document.getElementById('reset-button');
 
-const initResult = document.getElementById('init-result');
 const onStatusResult = document.getElementById('onStatus-result');
 const enrollResult = document.getElementById('enroll-result');
 const listFingersResult = document.getElementById('listFingers-result');
